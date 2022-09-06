@@ -1,8 +1,8 @@
 // =================================================================
 //
 // File: main.cpp
-// Author:
-// Date:
+// Author: Alan Patricio González Bernal
+// Date: 06/09/2022
 //
 // =================================================================
 #include <iostream>
@@ -16,5 +16,6 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
+  
 	return 0;
 }

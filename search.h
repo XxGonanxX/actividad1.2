@@ -1,7 +1,7 @@
 // =================================================================
 //
 // File: search.h
-// Author: Pedro Perez
+// Author: Alan Patricio González Bernal
 // Description: This file contains the implementations of the
 //				sequential and binary search algorithms.
 //
@@ -23,11 +23,17 @@
 // @return the index of the searched element, -1 in case the element
 //		   is not found in the vector.
 // =================================================================
+
 template <class T>
+
 int sequentialSearch(const std::vector<T> &v, T key) {
+  int contador{};
 	for (int i = 0; i < v.size(); i++) {
+    contador ++;
 		if (v[i] == key) {
+      
 			return i;
+      
 		}
 	}
 	return -1;
@@ -43,12 +49,13 @@ int sequentialSearch(const std::vector<T> &v, T key) {
 // =================================================================
 template <class T>
 int binarySearch(const std::vector<T> &v, T key) {
+  int contador{};
 	int low, high, mid;
-
 	low = 0;
 	high = v.size() - 1;
 	while (low <= high) {
 		mid = low + ((high - low) / 2); // mid = (high + low) / 2;
+    contador ++;
 		if (key == v[mid]) {
 			return mid;
 		} else if (key < v[mid]) {
